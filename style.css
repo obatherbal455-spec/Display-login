@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e293b, #312e81);
+    color: white;
+}
+
+.login-container {
+    width: 100%;
+    padding: 20px;
+}
+
+.login-card {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #cbd5e1;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 13px 15px;
+    border: 1px solid #475569;
+    border-radius: 10px;
+    outline: none;
+    background: rgba(15, 23, 42, 0.8);
+    color: white;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+input::placeholder {
+    color: #94a3b8;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #818cf8;
+    box-shadow: 0 0 0 3px rgba(129, 140, 248, 0.2);
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    font-size: 13px;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin: 0;
+}
+
+.remember input {
+    cursor: pointer;
+}
+
+a {
+    color: #a5b4fc;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #c4b5fd;
+    text-decoration: underline;
+}
+
+button {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 10px;
+    background: #6366f1;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #4f46e5;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(79, 70, 229, 0.4);
+}
+
+.register {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 14px;
+    color: #cbd5e1;
+}
+
+@media (max-width: 500px) {
+    .login-card {
+        padding: 30px 20px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .options {
+        font-size: 12px;
+    }
+}
